@@ -4,9 +4,7 @@ MAINTAINER geekduck
 RUN apt-get -yq update && apt-get -yq upgrade
 
 # install
-RUN apt-get install -y openssh-server language-pack-ja zsh tmux git
-RUN apt-get install -y wget unzip curl xterm tree grep
-RUN apt-get install -y emacs24 colordiff
+RUN apt-get install -y openssh-server zsh tmux git wget zip unzip curl xterm tree grep emacs24 colordiff golang
 
 RUN mkdir /var/run/sshd
 RUN echo 'root:root' |chpasswd
